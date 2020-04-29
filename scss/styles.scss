@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #734f96;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -528,6 +528,13 @@ footer {
         margin: 0 0 15px 0;
     }
 
+    h5 {
+        font-size: 1.0em;
+        font-weight: 300;
+        color: #7e8890;
+        margin: 0 0 15px 0;
+    }
+
     p {
         color: $text;
         font-size: 0.9em;
@@ -695,6 +702,40 @@ footer {
 */
 
 #skills {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
+    }
+}
+
+/*
+    -------------------------------
+    --- 9.5 Philosophies Styles ---
+    -------------------------------
+*/
+
+#philosophies {
     padding: 50px 15px;
     text-align: center;
 
