@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #734f96;
+$base-color: #a0785a;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -393,7 +393,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba($base-color-hover, 0.7);
     z-index: 1;
 }
 
@@ -830,49 +830,53 @@ footer {
 
 /*
     ---------------------------------------
-    ----- 11. Optional Section Styles -----
+    ------- 11. Certification Styles ------
     ---------------------------------------
 */
 
-.optional-section {
+#certifications {
     padding: 50px 15px;
+    border-bottom: 1px solid $border;
     text-align: center;
-    border-top: 1px solid $border;
 
     h2 {
         color: $heading;
+        margin-bottom: 50px;
     }
 }
 
-.optional-section-block {
-    max-width: 700px;
+.certification {
+    position: relative;
+    width: 600px;
+    height: 150px;
     margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid $border;
+    overflow: hidden;
     background: #fff;
-    text-align: left;
+    border-radius: 4px;
+}
+
+.certification-image {
+    float: left;
+}
+
+.certification-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 250px;
+    padding: 15px;
 
     h3 {
-        font-weight: 500;
-        margin: 0 0 15px 0;
+        font-size: 1.5em;
+        font-weight: 300;
         color: $heading;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
         margin: 0 0 15px 0;
     }
 
-    p, ul {
-        margin: 0 0 15px 0;
+    p {
         color: $text;
+        margin: 0 0 15px 0;
         font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
     }
 }
 
